@@ -231,3 +231,11 @@ stock SendClientMessageEx(playerid, color, const text[], {Float, _}:...)
     }
     return 1;
 }
+
+public OnPlayerDisconnect(playerid, reason)
+{
+    fakelicenseAuth = false;
+    havefakelicense = false;
+
+    return 1;
+}
